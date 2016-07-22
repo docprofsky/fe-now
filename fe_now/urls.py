@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.contrib.staticfiles import views
 
 urlpatterns = [
     url(r'^prices/', include('prices.urls')),
     url(r'^recipes/', include('recipes.urls')),
     url(r'^schedule/', include('schedule.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'^static/(?P<path>.*)$', views.serve)
 ]
