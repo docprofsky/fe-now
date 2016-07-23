@@ -1,0 +1,26 @@
+{% load staticfiles %}
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'recipes/style.css' %}">
+    </head>
+    <body>
+        <h1>Recipes</h1>
+        <p>Healthy and  flavorful recipes that you'll savor!</p>
+    <table>
+
+      {% if recipe_list %}
+        {% for recipe in recipe_list %}
+          <tr>
+            <td>
+              <h3><a href="/recipes/{{recipe.id}}">{{recipe.name}}</a> </h3>
+              <h4>{{recipe.description}}</h4>
+              </td>
+          </tr>
+        {% endfor %}
+      {% else %}
+        <p>No recipes are available</p>
+      {% endif %}
+        </table>
+    </body>
+</html>

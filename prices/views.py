@@ -4,6 +4,5 @@ from .models import Item
 
 def index(request):
     item_list = Item.objects.order_by('name')
-    print item_list
     context = {'item_list': item_list}
     return render(request, 'prices/prices.html', context)

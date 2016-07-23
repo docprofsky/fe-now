@@ -12,6 +12,5 @@ class Item(models.Model):
     price = models.DecimalField(decimal_places=2, max_digits=5, validators=[MinValueValidator(0)])
     quantity = models.IntegerField(validators=[MinValueValidator(0)])
 
-
     def __str__(self):
         return self.name
