@@ -1,0 +1,31 @@
+{% load staticfiles %}
+
+<html>
+  <head>
+    <title>Prices</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'prices/style.css' %}"/>
+  </head>
+  <body>
+    <h1>Prices and Inventory</h1>
+    <p>Since we are a non-profit organization, we can offer all kinds of fruits for incredibly low prices!</p>
+    <table>
+        <tr>
+            <td><b>Food</b></td>
+            <td><b>Inventory</b></td>
+            <td><b>Price</b></td>
+            <td><b>Description</b></td>
+        </tr>
+        {% if item_list %}
+          {% for item in item_list %}
+            <tr>
+                <td>{{item.name}}</td>
+                <td>{{item.quantity}}</td>
+                <td>{{item.price}}</td>
+                <td>{{item.description}}</td>
+            </tr>
+          {% endfor %}
+        {% endif %}
+    </table>
+  </body>
+</html>

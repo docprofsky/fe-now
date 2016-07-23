@@ -4,5 +4,5 @@ from . import views
 
 app_name = 'prices'
 urlpatterns = [
-
+    url(r'^$', views.index, name='index')
 ]
