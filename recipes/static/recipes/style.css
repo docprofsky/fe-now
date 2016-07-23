@@ -1,3 +1,16 @@
-h1 {
-font-size:30em;
+h1{
+    text-align: center;
+}
+p {
+    text-align:center;
+}
+li {
+    
+}
+/* Remember to change the font!*/
+body{
+    font-family: ;
+}
+li{
+    border: 2px solid black
 }
