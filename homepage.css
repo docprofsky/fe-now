@@ -1,0 +1,41 @@
+body {
+    background-color: #6cf94a;
+}
+
+ul {
+    text-align: left;
+    font-family: sans-serif;
+}
+
+h1, h3 {
+    font-family: serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50pt;
+}
+
+h3 {
+    font-size: 20pt;
+}
+
+img {
+    width: 90%;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.nav {
+    background-color: #f7f758;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    font-size: 15pt;
+}
