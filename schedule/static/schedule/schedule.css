@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+}
+
+p{ 
+ text-align: center;
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    width:90%;
+   
+}
+time{
+     border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+}
