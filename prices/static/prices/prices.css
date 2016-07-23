@@ -2,7 +2,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: hsl(122, 100%, 82%);
-  
+
 }
 
 h1 {
@@ -29,7 +29,7 @@ table {
     margin-right: auto;
     margin-top: 3em;
     width: 90%;
-    
+
 }
 
 tr:nth-child(even){background-color: #fa6666}
