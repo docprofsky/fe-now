@@ -1,7 +1,7 @@
 h1{
     text-align: center;
 }
-p {
+p {font-family: sans-serif;
     text-align:center;
 }
 li {
@@ -9,8 +9,34 @@ li {
 }
 /* Remember to change the font!*/
 body{
-    font-family: ;
+    background-color: hsl(122,100%,82%);
+    font-family: serif;
+    
 }
-li{
-    border: 2px solid black
+
+
+td {
+        border: 2px solid #000000;
+     border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+tr:nth-child(even){
+    background-color: #fa6666;
+    a {
+        color: #f7f75a;
+    }
+}
+
+tr:nth-child(odd){
+    background-color: #f7f75a;
+    a {
+        color: #fa6666;
+    }
+}
+a: nth-child (even) {color: green;
 }
