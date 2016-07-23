@@ -1,8 +1,11 @@
 from __future__ import unicode_literals
 
 from django.db import models
+from django.utils.encoding import python_2_unicode_compatible
 from django.core.validators import MinValueValidator
 
+
+@python_2_unicode_compatible
 class Item(models.Model):
     name = models.CharField(max_length=200)
     description = models.CharField(max_length=200)
